@@ -159,3 +159,145 @@ pip install -r requirements.txt
      ```
 
    - Access the backend API at `http://localhost:8000`.
+
+## Setting up Django Framework
+
+### **Installing an official release with `pip`**
+
+This is the recommended way to install Django.
+
+1. Install [pip](https://pip.pypa.io/). The easiest is to use the [standalone pip installer](https://pip.pypa.io/en/latest/installation/). If your distribution already has **`pip`** installed, you might need to update it if it’s outdated. If it’s outdated, you’ll know because installation won’t work.
+2. Take a look at [venv](https://docs.python.org/3/tutorial/venv.html). This tool provides isolated Python environments, which are more practical than installing packages systemwide. It also allows installing packages without administrator privileges. The [contributing tutorial](https://docs.djangoproject.com/en/4.2/intro/contributing/) walks through how to create a virtual environment. However, in this instance, I will use [Poetry](https://python-poetry.org/).
+3. After you’ve created and activated a virtual environment, enter the command:
+    
+    **`$** python -m pip install Django`
+    
+
+**Creating a project**
+
+**`$** django-admin startproject k5`
+
+This will create a **`k5`** directory in the current directory.
+
+```
+k5/
+    manage.py
+    k5/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py
+```
+
+**The development server**
+
+Change into the outer **`mysite`** directory, if you haven’t already, and run the following commands:
+
+**`$** python manage.py runserver`
+
+You’ll see the following output on the command line:
+
+```
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 28, 2023 - 21:15:05
+Django version 4.2.5, using settings 'k5.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+```
+
+### Making the Rest API application in the project
+
+The following command will create an application for the project that will handle the API-related transactions within the project.
+
+`$** python manage.py startapp api`
+
+## Setting up React Framework via ViteJS
+
+Scaffolding the frontend with pnpm (I replaced npm due to the benefits):
+`$ pnpm create vite@latest k5_frontend`
+
+Then follow the prompts. I am using the JavaScript without the SWC.
+
+`$ cd k5_frontend`
+
+`$ pnpm install`
+
+```bash
+Packages: +265
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 287, reused 211, downloaded 54, added 265, done
+node_modules/.pnpm/esbuild@0.18.20/node_modules/esbuild: Running postinstall script, done in 473ms
+
+dependencies:
++ react 18.2.0
++ react-dom 18.2.0
+
+devDependencies:
++ @types/react 18.2.23
++ @types/react-dom 18.2.8
++ @vitejs/plugin-react 4.1.0
++ eslint 8.50.0
++ eslint-plugin-react 7.33.2
++ eslint-plugin-react-hooks 4.6.0
++ eslint-plugin-react-refresh 0.4.3
++ vite 4.4.9
+
+Done in 9.2s
+```
+
+### Installation of Tailwind CSS
+
+Install **`tailwindcss`** and its peer dependencies, then generate **`tailwind.config.js`** and **`postcss.config.js`** files.
+
+`pnpm install -D tailwindcss postcss autoprefixer`
+
+```bash
+Packages: +49
++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 336, reused 312, downloaded 2, added 49, done
+
+devDependencies:
++ autoprefixer 10.4.16
++ postcss 8.4.30
++ tailwindcss 3.3.3
+
+Done in 3.5s
+```
+
+`pnpx tailwindcss init -p`
+
+```bash
+Created Tailwind CSS config file: tailwind.config.js
+Created PostCSS config file: postcss.config.js
+```
+
+Add the paths to all of your template files in your **`tailwind.config.js`** file.
+
+```bash
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Add the **`@tailwind`** directives for each of Tailwind’s layers to your **`./src/index.css`** file.
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
