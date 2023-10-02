@@ -67,7 +67,7 @@ You can use `pip` to install these packages in your Python environment:
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 ### Installation
 
