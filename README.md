@@ -2,6 +2,10 @@
 
 **"Project K5 Progress" aims to drive climate action at the grassroots level, creating a sustainable and resilient future for the Philippines. Together, we can win the race against the climate crisis.**
 
+![image](https://github.com/aidrecabrera/project-k5/assets/61798731/552d234a-9b2e-4b7f-ad23-932bdc845461)
+
+---
+
 **Motivation.** The Philippines faces severe climate challenges, from natural disasters to rising sea levels and biodiversity loss. It's essential to bridge the gap between climate promises and effective action, especially as a signatory to The Paris Agreement.
 
 **Empathy.** Project K5 Progress" empathizes with diverse stakeholders:
