@@ -41,6 +41,34 @@ Before you begin, make sure you have the following software and tools installed:
 - [MongoDB](https://www.mongodb.com/) - a NoSQL database.
 - [PyMongo](https://pymongo.readthedocs.io/) - Python driver for MongoDB.
 
+### Django Project Dependencies
+To run this project, you'll need to install the following Python packages and their specified versions:
+
+- [asgiref](https://pypi.org/project/asgiref/)==3.7.2
+- [certifi](https://pypi.org/project/certifi/)==2023.7.22
+- [charset-normalizer](https://pypi.org/project/charset-normalizer/)==3.2.0
+- [Django](https://www.djangoproject.com/)==4.1.11
+- [django-cors-headers](https://pypi.org/project/django-cors-headers/)==4.2.0
+- [djangorestframework](https://pypi.org/project/djangorestframework/)==3.14.0
+- [djongo](https://pypi.org/project/djongo/)==1.3.6
+- [dnspython](https://pypi.org/project/dnspython/)==2.4.2
+- [docopt](https://pypi.org/project/docopt/)==0.6.2
+- [idna](https://pypi.org/project/idna/)==3.4
+- [pipreqs](https://pypi.org/project/pipreqs/)==0.4.13
+- [pymongo](https://pypi.org/project/pymongo/)==3.12.3
+- [pytz](https://pypi.org/project/pytz/)==2023.3.post1
+- [requests](https://pypi.org/project/requests/)==2.31.0
+- [sqlparse](https://pypi.org/project/sqlparse/)==0.2.4
+- [tzdata](https://pypi.org/project/tzdata/)==2023.3
+- [urllib3](https://pypi.org/project/urllib3/)==2.0.5
+- [yarg](https://pypi.org/project/yarg/)==0.1.9
+
+You can use `pip` to install these packages in your Python environment:
+
+```bash
+pip install -r requirements.txt
+
+
 ### Installation
 
 1. **Clone the repository:**
