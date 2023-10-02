@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# Project K5 Progress
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**"Project K5 Progress" aims to drive climate action at the grassroots level, creating a sustainable and resilient future for the Philippines. Together, we can win the race against the climate crisis.**
 
-## Available Scripts
+**Motivation.** The Philippines faces severe climate challenges, from natural disasters to rising sea levels and biodiversity loss. It's essential to bridge the gap between climate promises and effective action, especially as a signatory to The Paris Agreement.
 
-In the project directory, you can run:
+**Empathy.** Project K5 Progress" empathizes with diverse stakeholders:
+- Filipino Civil Society: They need reliable, real-time climate information for effective climate engagement.
+- Public Health Authorities: Similar to the COVID-19 pandemic, climate action requires real-time data communication and a pipeline between the general public and the authorities.
+- Filipino Youth: Engaging the youth is vital for a sustainable future.
 
-### `npm start`
+**Definition.** Existing information systems lack timely, localized climate data. Misinformation on the internet exacerbates this issue, necessitating a trusted climate information system.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Ideation.** Inspired by COVID-19 dashboards, "Project K5 Progress" creates a web app for Filipinos with:
+- Real-time Climate Data
+- Climate Reporting
+- Community Engagement
+- Youth Empowerment
+- Global Climate Commitment Tracking
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Objectives**
 
-### `npm test`
+1. Develop a user-friendly web app for monitoring, reporting, and promoting climate progress in the Philippines.
+2. Provide accurate climate data for informed decision-making.
+3. Empower and engage local individuals and communities, with a focus on youth involvement.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+![Project K5 - Page 1](https://github.com/aidrecabrera/project-k5/assets/61798731/0f041640-62d2-4c4f-805b-bd15ec5ab2b2)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The selection of our technical stack is driven by the imperative of time constraints. There is a need to ensure the timely development and deployment of a functional web application. Therefore, the project lead has chosen technologies that strike a balance between efficiency, reliability, and ease of implementation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+Before you begin, make sure you have the following software and tools installed:
 
-### `npm run eject`
+- [Node.js](https://nodejs.org/) - for running ReactJS.
+- [Python](https://www.python.org/) - for the backend.
+- [Django](https://www.djangoproject.com/) - a Python web framework.
+- [MongoDB](https://www.mongodb.com/) - a NoSQL database.
+- [PyMongo](https://pymongo.readthedocs.io/) - Python driver for MongoDB.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/aidrecabrera/project_k5.git
+   cd project_k5
+   ```
+2. **Frontend Setup:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - Navigate to the frontend directory:
 
-## Learn More
+     ```bash
+     cd frontend
+     ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - Install dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+     ```bash
+     npm install
+     ```
+     or
+	   ```bash
+     pnpm install
+     ```
 
-### Code Splitting
+3. **Backend Setup:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   - Navigate to the backend directory:
 
-### Analyzing the Bundle Size
+     ```bash
+     cd backend
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   - Create a virtual environment (optional but recommended):
 
-### Making a Progressive Web App
+     ```bash
+     python -m venv venv
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   - Activate the virtual environment:
 
-### Advanced Configuration
+     - On Windows:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+       ```bash
+       venv\Scripts\activate
+       ```
 
-### Deployment
+     - On macOS and Linux:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+       ```bash
+       source venv/bin/activate
+       ```
 
-### `npm run build` fails to minify
+   - Install Django and PyMongo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+     ```bash
+     pip install django pymongo
+     ```
+
+   - Apply database migrations:
+
+     ```bash
+     python manage.py migrate
+     ```
+
+### Usage
+
+1. **Frontend Development:**
+
+   - Start the React development server:
+
+     ```bash
+     npm start or pnpm start
+     ```
+   - Access the frontend in your browser at `http://localhost:3000`.
+
+2. **Backend Development:**
+
+   - Start the Django development server:
+
+     ```bash
+     python manage.py runserver
+     ```
+
+   - Access the backend API at `http://localhost:8000`.
