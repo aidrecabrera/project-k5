@@ -1,8 +1,7 @@
-# Project K5 Progress
-
-**"Project K5 Progress" aims to drive climate action at the grassroots level, creating a sustainable and resilient future for the Philippines. Together, we can win the race against the climate crisis.**
-
-![image](https://github.com/aidrecabrera/project-k5/assets/61798731/552d234a-9b2e-4b7f-ad23-932bdc845461)
+<div align="center">
+  <p><img src="https://github.com/aidrecabrera/project-k5/assets/61798731/8f567659-7c21-404a-aac8-4e6ba10dbccd" /></p>
+  <p>"Project K5 Progress" aims to drive climate action at the grassroots level, creating a sustainable and <br> resilient future for the Philippines. Together, we can win the race against the climate crisis.</p>
+</div>
 
 ---
 
@@ -27,6 +26,8 @@
 1. Develop a user-friendly web app for monitoring, reporting, and promoting climate progress in the Philippines.
 2. Provide accurate climate data for informed decision-making.
 3. Empower and engage local individuals and communities, with a focus on youth involvement.
+
+![image](https://github.com/aidrecabrera/project-k5/assets/61798731/552d234a-9b2e-4b7f-ad23-932bdc845461)
 
 ## Tech Stack
 
