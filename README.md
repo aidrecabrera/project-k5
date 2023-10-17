@@ -1,5 +1,5 @@
 <div align="center">
-  <p><img src="https://github.com/aidrecabrera/project-k5/assets/61798731/8f567659-7c21-404a-aac8-4e6ba10dbccd" /></p>
+  <p><img src="https://github.com/aidrecabrera/project-k5/assets/61798731/c39f502d-cf87-467a-aed9-f4b0281b7caf" /></p>
   <p>"Project K5 Progress" aims to drive climate action at the grassroots level, creating a sustainable and <br> resilient future for the Philippines. Together, we can win the race against the climate crisis.</p>
 </div>
 
@@ -27,11 +27,12 @@
 2. Provide accurate climate data for informed decision-making.
 3. Empower and engage local individuals and communities, with a focus on youth involvement.
 
-![image](https://github.com/aidrecabrera/project-k5/assets/61798731/552d234a-9b2e-4b7f-ad23-932bdc845461)
+![Home](https://github.com/aidrecabrera/project-k5/assets/61798731/287e5fc8-6c93-49a3-b690-b13d22457d32)
 
 ## Tech Stack
 
-![Project K5 - Page 1](https://github.com/aidrecabrera/project-k5/assets/61798731/0f041640-62d2-4c4f-805b-bd15ec5ab2b2)
+![Tech-Stack](https://github.com/aidrecabrera/project-k5/assets/61798731/b3d9c7e9-6a62-4f11-a6e9-78a74f212d63)
+
 
 The selection of our technical stack is driven by the imperative of time constraints. There is a need to ensure the timely development and deployment of a functional web application. Therefore, the project lead has chosen technologies that strike a balance between efficiency, reliability, and ease of implementation.
 
@@ -163,7 +164,7 @@ pip install -r requirements.txt
 
 ## Setting up Django Framework
 
-### **Installing an official release with `pip`**
+### Installing an official release with `pip`
 
 This is the recommended way to install Django.
 
@@ -171,12 +172,12 @@ This is the recommended way to install Django.
 2. Take a look at [venv](https://docs.python.org/3/tutorial/venv.html). This tool provides isolated Python environments, which are more practical than installing packages systemwide. It also allows installing packages without administrator privileges. The [contributing tutorial](https://docs.djangoproject.com/en/4.2/intro/contributing/) walks through how to create a virtual environment. However, in this instance, I will use [Poetry](https://python-poetry.org/).
 3. After you’ve created and activated a virtual environment, enter the command:
     
-    **`$** python -m pip install Django`
+    `$ python -m pip install Django`
     
 
 **Creating a project**
 
-**`$** django-admin startproject k5`
+`$ django-admin startproject k5`
 
 This will create a **`k5`** directory in the current directory.
 
@@ -195,7 +196,7 @@ k5/
 
 Change into the outer **`mysite`** directory, if you haven’t already, and run the following commands:
 
-**`$** python manage.py runserver`
+`$ python manage.py runserver`
 
 You’ll see the following output on the command line:
 
@@ -217,7 +218,7 @@ Quit the server with CTRL-BREAK.
 
 The following command will create an application for the project that will handle the API-related transactions within the project.
 
-`$** python manage.py startapp api`
+`$ python manage.py startapp api`
 
 ## Setting up React Framework via ViteJS
 
