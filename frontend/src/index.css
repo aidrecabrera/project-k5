@@ -13,3 +13,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  overflow: hidden;
+}
+
+@keyframes noiseAnimation {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%);
+  }
+  70% {
+    transform: translateY(10%);
+  }
+  80% {
+    transform: translate(-15%);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  to {
+    transform: translate(5%);
+  }
+}
+
+body:after {
+  content: "";
+  pointer-events: none;
+  will-change: transform;
+  animation: noiseAnimation 0.1s steps(4) infinite;
+  opacity: 0.2;
+  background-image: url("https://uploads-ssl.webflow.com/61951265d7110a723766c703/61951306d6dbb6562f844696_Noise.png");
+  width: 200%;
+  height: 200%;
+  display: block;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+}

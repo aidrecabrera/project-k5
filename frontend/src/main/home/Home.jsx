@@ -17,7 +17,7 @@ export default class Home extends Component {
             <img
               src={process.env.PUBLIC_URL + "/earth.png"}
               alt=""
-              className="w-fit mx-auto"
+              className="earth w-fit mx-auto"
             />
             <p className="text-center font-grotesk font-light ">
               Natural disasters have always been with us. But climate change
