@@ -7,7 +7,7 @@ export default class Home extends Component {
       <div>
         <div className="home pt-20 flex items-center justify-center">
           <div className="flex flex-col gap-10">
-            <h1 className="text-center font-grotesk text-5xl font-light ">
+            <h1 className="text-center font-grotesk text-8xl font-bold font-light ">
               PHILIPPINES IS NOT IMMUNE
             </h1>
             <img
