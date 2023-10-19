@@ -1,0 +1,21 @@
+Folder PATH listing for volume Svene
+Volume serial number is FC8C-7E31
+C:.
++---.github
+|   \---ISSUE_TEMPLATE
++---.idea
+|   \---inspectionProfiles
++---api
+|   +---migrations
+|   |   \---__pycache__
+|   \---__pycache__
++---docs
++---documents
++---frontend
+|   +---.idea
+|   +---build
+|   |   \---static
+|   |       +---css
+|   |       \---js
+\---project_k5
+    \---__pycache__
