@@ -10,7 +10,11 @@ export default class Home extends Component {
             <h1 className="text-center font-grotesk text-8xl font-bold font-light ">
               PHILIPPINES IS NOT IMMUNE
             </h1>
-            <img src="{%static 'earth.png'%}" alt="" className="earth w-fit mx-auto"/>
+            <img
+              src="{%static 'earth.png'%}"
+              alt=""
+              className="earth w-fit mx-auto"
+            />
             <p className="text-center font-grotesk font-light ">
               Natural disasters have always been with us. But climate change
               exacerbates their impact, making the worst events occur more
@@ -18,6 +22,7 @@ export default class Home extends Component {
             </p>
           </div>
         </div>
+        <div></div>
       </div>
     );
   }

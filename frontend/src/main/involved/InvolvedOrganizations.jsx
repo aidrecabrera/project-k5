@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { Component } from "react";
 
-export default function InvolvedOrganization({ name, website, description }) {
-return (
-    <div className="organization">
-        <h2>{name}</h2>
-        <p>
-        <strong>Website:</strong> <a href={website} target="_blank" rel="noopener noreferrer">{website}</a>
-        </p>
-        <p>{description}</p>
-    </div>
+export class InvolvedOrganizations extends Component {
+  render() {
+    const { name, website, description } = this.props; // Access the props here
+
+    return (
+      <div className="flex gap-10 m-5 p-5 border border-white rounded-xl">
+        <div className="organization text-center bg-base-100 p-5">
+          <h1 className="font-black text-5xl text-left">
+            <a href={website} target="_blank" rel="noopener noreferrer">
+              {name}
+            </a>
+          </h1>
+          <p className="text-left">{description}</p>
+        </div>
+      </div>
     );
+  }
 }
+
+export default InvolvedOrganizations;
