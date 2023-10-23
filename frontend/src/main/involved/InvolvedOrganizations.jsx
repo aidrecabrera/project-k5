@@ -5,8 +5,8 @@ export class InvolvedOrganizations extends Component {
     const { name, website, description } = this.props; // Access the props here
 
     return (
-      <div className=" border border-white w-1/4">
-        <div className="flex flex-col organization bg-base-100 p-10 gap-5">
+      <div className=" border border-white w-1/4 ">
+        <div className="flex flex-col organization bg-base-100 p-10 gap-5 bg-[url('https://tailwindcss.com/_next/static/media/blog-post-form-dark@90.5b274bea.jpg')] bg-contain">
           <h1 className="font-black text-left text-2xl">
             <a href={website} target="_blank" rel="noopener noreferrer">
               {name}

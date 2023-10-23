@@ -8,6 +8,9 @@ dependencies:
   '@material-design-icons/font':
     specifier: ^0.14.13
     version: 0.14.13
+  '@splinetool/runtime':
+    specifier: ^0.9.487
+    version: 0.9.487
   '@testing-library/jest-dom':
     specifier: ^5.17.0
     version: 5.17.0
@@ -2211,6 +2214,13 @@ packages:
     resolution: {integrity: sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==}
     dependencies:
       '@sinonjs/commons': 1.8.6
+    dev: false
+
+  /@splinetool/runtime@0.9.487:
+    resolution: {integrity: sha512-YySC1xCBv/Bbr4kzLKcLvQjWBpoeIDN22RowWVWRN18Vmvvja5wbzEuGhhpFAMTTFDJVCkFddL4WJncOp4JUAQ==}
+    dependencies:
+      on-change: 4.0.2
+      semver-compare: 1.0.0
     dev: false
 
   /@surma/rollup-plugin-off-main-thread@2.2.3:
@@ -7432,6 +7442,11 @@ packages:
     resolution: {integrity: sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==}
     dev: false
 
+  /on-change@4.0.2:
+    resolution: {integrity: sha512-cMtCyuJmTx/bg2HCpHo3ZLeF7FZnBOapLqZHr2AlLeJ5Ul0Zu2mUJJz051Fdwu/Et2YW04ZD+TtU+gVy0ACNCA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: false
+
   /on-finished@2.4.1:
     resolution: {integrity: sha512-oVlzkg3ENAhCk2zdv7IJwd/QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM+brtuJjePWiYF/ClmuDr8Ch5+kg==}
     engines: {node: '>= 0.8'}
@@ -9146,6 +9161,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       node-forge: 1.3.1
+    dev: false
+
+  /semver-compare@1.0.0:
+    resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
     dev: false
 
   /semver@6.3.1:

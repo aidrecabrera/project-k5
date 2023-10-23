@@ -12,6 +12,7 @@ export default {
     fontFamily: {
       grotesk: ["Space Grotesk", "sans-serif"],
       brico: ["Bricolage Grotesque", "sans-serif"],
+      shoulders: ["Big Shoulders Display", "sans-serif"],
     },
   },
   plugins: [],
