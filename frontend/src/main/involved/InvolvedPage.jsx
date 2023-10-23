@@ -25,12 +25,15 @@ export default class InvolvedPage extends Component {
   render() {
     return (
       <>
-        <div className="flex flex-row">
-          <div className="flex w-1/4 flex-grow-1 align-middle items-center justify-center">
-            <h1>GET INVOLVED</h1>
-          </div>
-          <div className="w-3/4 justify-center items-center text-center">
-            <div className="flex flex-wrap">
+        <div className="flex flex-col pt-20">
+          <div>
+            <div>
+              <p className="flex w-screen text-7xl font-thin tracking-tight px-60">
+                Want to get involved? Here is a list of organizations you can
+                join or support in your mission to protect our planet →
+              </p>
+            </div>
+            <div className="flex flex-row py-14 gap-5 flex-wrap justify-center text-center w-screen">
               {this.state.organizationsData.map((org, index) => (
                 <InvolvedOrganizations
                   key={index}

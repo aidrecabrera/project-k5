@@ -4,11 +4,10 @@ export class NavigationBar extends Component {
   render() {
     return (
       <>
-        <div>
-          <nav className="flex p-12 gap-24 font-grotesk font-light tracking-widest absolute left-1/2 transform -translate-x-1/2">
+        <div className="border-b-white">
+          <nav className="h-[10vh] flex p-10 gap-24 font-light tracking-widest justify-center border-b border-b-white">
             <Link to="/">HOME</Link>
             <Link to="/css/">PROGRESS</Link>
-            <img src={process.env.PUBLIC_URL + "/K5.png"} alt="K5 Progress" />
             <Link to="/js/">INFORMATION</Link>
             <Link to="/involve/">INVOLVED</Link>
           </nav>

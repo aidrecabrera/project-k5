@@ -3,9 +3,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        pacific:
+          "url('https://www.universetoday.com/wp-content/uploads/2010/03/sarychev-volcano.jpg')",
+      },
+    },
     fontFamily: {
       grotesk: ["Space Grotesk", "sans-serif"],
+      brico: ["Bricolage Grotesque", "sans-serif"],
     },
   },
   plugins: [],

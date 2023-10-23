@@ -5,9 +5,9 @@ export class InvolvedOrganizations extends Component {
     const { name, website, description } = this.props; // Access the props here
 
     return (
-      <div className="flex gap-10 m-5 p-5 border border-white rounded-xl">
-        <div className="organization text-center bg-base-100 p-5">
-          <h1 className="font-black text-5xl text-left">
+      <div className=" border border-white w-1/4">
+        <div className="flex flex-col organization bg-base-100 p-10 gap-5">
+          <h1 className="font-black text-left text-2xl">
             <a href={website} target="_blank" rel="noopener noreferrer">
               {name}
             </a>
