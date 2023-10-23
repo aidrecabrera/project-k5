@@ -9,10 +9,11 @@ export class NavigationBar extends Component {
             style={{ justifyContent: "center", alignItems: "center" }}
           >
             <a href="/html/">HOME</a>
-            <a href="/css/">OUR PROGRESS</a>
-            <img src={process.env.PUBLIC_URL + "/K5.png"} alt="K5 Progress" />
+            <a href="/css/">PROGRESS</a>
+            <h1>K%</h1>
+            {/* <img src={process.env.PUBLIC_URL + "/K5.png"} alt="K5 Progress" /> */}
             <a href="/js/">INFORMATION</a>
-            <a href="/python/">GET INVOLVED</a>
+            <a href="/python/">INVOLVED</a>
           </nav>
         </div>
       </>
