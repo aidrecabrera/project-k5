@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { Component } from "react";
-import InvolvedOrganizations from "./InvolvedOrganizations";
+import InvolvedOrganization from "./InvolvedOrganizations";
 export default class InvolvedPage extends Component {
   constructor() {
     super();
@@ -35,7 +35,8 @@ export default class InvolvedPage extends Component {
             </div>
             <div className="flex flex-row py-14 gap-5 flex-wrap justify-center text-center w-screen">
               {this.state.organizationsData.map((org, index) => (
-                <InvolvedOrganizations
+                <InvolvedOrganization
+                  tions
                   key={index}
                   name={org.name}
                   website={org.website}

@@ -4,16 +4,13 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <div>
+        <div className="flex flex-col justify-center align-middle p-16 py-36">
           <div className="flex flex-row px-40 gap-16">
-            <div className="w-3/12">
-              <h1 className="text-7xl">→</h1>
-            </div>
-            <div className="flex flex-col w-9/12 gap-10">
-              <div>
+            <div className="flex flex-col w-12/12 gap-10 relative">
+              <div className="absolute z-50 -top-16 -left-16 bg-white text-black p-10">
                 <h1 className="text-8xl">THE GREAT CHALLENGE</h1>
               </div>
-              <div className="">
+              <div className="relative">
                 <img
                   src="https://www.universetoday.com/wp-content/uploads/2010/03/sarychev-volcano.jpg"
                   alt=""

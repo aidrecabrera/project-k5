@@ -70,3 +70,19 @@ body {
   top: -50%;
   left: -50%;
 }
+
+.impact {
+  @apply flex flex-col gap-5 border w-3/12 py-5;
+}
+
+.impact-header {
+  @apply text-3xl font-black px-10 py-2;
+}
+
+.impact-paragraph {
+  @apply text-base px-10 py-2;
+}
+
+.article-header {
+  @apply text-6xl pb-10;
+}
