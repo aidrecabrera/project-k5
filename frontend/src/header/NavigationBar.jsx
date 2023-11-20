@@ -1,19 +1,17 @@
 import React, { Component } from "react";
+import { Link, Outlet } from "react-router-dom";
 export class NavigationBar extends Component {
   render() {
     return (
       <>
-        <div>
-          <nav
-            className="flex gap-24 p-14 ml-16 font-grotesk font-light tracking-widest"
-            style={{ justifyContent: "center", alignItems: "center" }}
-          >
-            <a href="/html/">HOME</a>
-            <a href="/css/">OUR PROGRESS</a>
-            <img src={process.env.PUBLIC_URL + "/K5.png"} alt="K5 Progress" />
-            <a href="/js/">INFORMATION</a>
-            <a href="/python/">GET INVOLVED</a>
+        <div className="border-b-white">
+          <nav className="h-[10vh] flex p-10 gap-24 font-light tracking-widest justify-center border-b border-b-white">
+            <Link to="/">HOME</Link>
+            <Link to="/progress/">PROGRESS</Link>
+            <Link to="/js/">INFORMATION</Link>
+            <Link to="/involve/">INVOLVED</Link>
           </nav>
+          <Outlet />
         </div>
       </>
     );

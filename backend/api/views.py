@@ -39,3 +39,16 @@ def ph_population(request):
         "ph_population": population
     })
 
+@api_view(['GET'])
+@cache_page(600)
+def climate_organizations(request):
+    k5_database = client['k5-cluster']
+    collection = k5_database['organization']
+
+    documents = collection.find({}, projection={'name': 1, 'website': 1, 'description': 1})
+    organization = []
+    for org in documents:
+        org["_id"] = str(org["_id"])
+        organization.append(org)
+
+    return Response(organization)

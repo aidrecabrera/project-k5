@@ -1,32 +1,26 @@
 import React, { Component } from "react";
-import NavigationBar from "../../header/NavigationBar";
-import "./Home.css";
+import Hero from "./Home.1";
+import Problem from "./Home.2";
+import Impact from "./Home.3";
+import K5 from "./Home.4";
+import Pledge from "./Home.5";
+import Delivery from "./Home.6";
+import Quote from "./Home.Quote";
 
 export default class Home extends Component {
   render() {
     return (
-      <div>
-        <div className="navigation">
-          <NavigationBar />
+      <>
+        <div className="flex flex-col overflow-hidden ">
+          <Hero />
+          <Problem />
+          <Quote />
+          <Impact />
+          <Pledge />
+          <K5 />
+          <Delivery />
         </div>
-        <div className="home pt-20 flex items-center justify-center">
-          <div className="flex flex-col gap-10">
-            <h1 className="text-center font-grotesk text-5xl font-light ">
-              PHILIPPINES IS NOT IMMUNE
-            </h1>
-            <img
-              src={process.env.PUBLIC_URL + "/earth.png"}
-              alt=""
-              className="earth w-fit mx-auto"
-            />
-            <p className="text-center font-grotesk font-light ">
-              Natural disasters have always been with us. But climate change
-              exacerbates their impact, making the worst events occur more
-              frequently.
-            </p>
-          </div>
-        </div>
-      </div>
+      </>
     );
   }
 }
