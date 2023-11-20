@@ -1,0 +1,30 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.getApiInformation),
+    path('year', views.year),
+    path('co2', views.co2),
+    path('population', views.population),
+    path('cement_co2', views.cement_co2),
+    path('cement_co2_per_capita', views.cement_co2_per_capita),
+    path('co2_growth_abs', views.co2_growth_abs),
+    path('co2_growth_prct', views.co2_growth_prct),
+    path('co2_including_luc', views.co2_including_luc),
+    path('co2_including_luc_growth_abs', views.co2_including_luc_growth_abs),
+    path('co2_including_luc_growth_prct', views.co2_including_luc_growth_prct),
+    path('co2_including_luc_per_capita', views.co2_including_luc_per_capita),
+    path('co2_including_luc_per_unit_energy', views.co2_including_luc_per_unit_energy),
+    path('co2_per_capita', views.co2_per_capita),
+    path('co2_per_unit_energy', views.co2_per_unit_energy),
+    path('coal_co2', views.coal_co2),
+    path('coal_co2_per_capita', views.coal_co2_per_capita),
+    path('cumulative_cement_co2', views.cumulative_cement_co2),
+    path('cumulative_co2', views.cumulative_co2),
+    path('cumulative_co2_including_luc', views.cumulative_co2_including_luc),
+    path('cumulative_coal_co2', views.cumulative_coal_co2),
+    path('cumulative_flaring_co2', views.cumulative_flaring_co2),
+    path('cumulative_gas_co2', views.cumulative_gas_co2),
+    path('cumulative_luc_co2', views.cumulative_luc_co2),
+    path('cumulative_oil_co2', views.cumulative_oil_co2),
+]
