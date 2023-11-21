@@ -75,6 +75,11 @@ You can use `pip` to install these packages in your Python environment:
 pip install -r requirements.txt
 ```
 
+### API Server
+```
+http://k5api.aidre.codes/swagger/
+```
+
 ### Installation
 
 1. **Clone the repository:**
